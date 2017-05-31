@@ -1,5 +1,0 @@
-nrfutil pkg generate --hw-version 52 --sd-req 0x98,0xCAFE --application-version 1 --application nordicsemi/1.hex --key-file 1.pem app_dfu_package.zip
-
-python __main__.py pkg generate --hw-version 52 --sd-req 0x98,0xCAFE --application-version 1 --application firmware/1.hex --key-file firmware/1.pem firmware/1.zip
-
-python __main__.py keys generate firmware/1.pem
