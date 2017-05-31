@@ -37,8 +37,8 @@
 
 import os
 import unittest
-from nordicsemi.utility.target_registry import TargetRegistry, EnvTargetDatabase
-from nordicsemi.utility.target_registry import FileTargetDatabase
+from utility.target_registry import TargetRegistry, EnvTargetDatabase
+from utility.target_registry import FileTargetDatabase
 
 
 class TestTargetRegistry(unittest.TestCase):

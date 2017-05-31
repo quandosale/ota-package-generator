@@ -44,14 +44,14 @@ import logging
 import subprocess
 sys.path.append(os.getcwd())
 
-from nordicsemi.dfu.bl_dfu_sett import BLDFUSettings
-from nordicsemi.dfu.dfu import Dfu
-from nordicsemi.dfu.dfu_transport import DfuEvent
-from nordicsemi.dfu.dfu_transport_serial import DfuTransportSerial
-from nordicsemi.dfu.package import Package
-from nordicsemi import version as nrfutil_version
-from nordicsemi.dfu.signing import Signing
-from nordicsemi.dfu.util import query_func
+from dfu.bl_dfu_sett import BLDFUSettings
+from dfu.dfu import Dfu
+from dfu.dfu_transport import DfuEvent
+from dfu.dfu_transport_serial import DfuTransportSerial
+from dfu.package import Package
+import version as nrfutil_version
+from dfu.signing import Signing
+from dfu.util import query_func
 from pc_ble_driver_py.exceptions import NordicSemiException, NotImplementedException
 
 logger = logging.getLogger(__name__)
@@ -61,7 +61,7 @@ def ble_driver_init(conn_ic_id):
     from pc_ble_driver_py import config
     config.__conn_ic_id__ = conn_ic_id
     from pc_ble_driver_py.ble_driver    import BLEDriver, Flasher
-    from nordicsemi.dfu.dfu_transport_ble import DfuTransportBle
+    from dfu.dfu_transport_ble import DfuTransportBle
 
 def display_sec_warning():
     default_key_warning = """
@@ -406,7 +406,7 @@ def generate(zipfile,
     Generate a zip package for distribution to apps that support Nordic DFU OTA.
     The application, bootloader, and SoftDevice files are converted to .bin if supplied as .hex files.
     For more information on the generated package, see:
-    http://developer.nordicsemi.com/nRF5_SDK/doc/
+    http://developer.com/nRF5_SDK/doc/
 
     The following combinations are supported by this command:
 

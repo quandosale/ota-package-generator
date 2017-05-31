@@ -35,9 +35,9 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 import unittest
-from nordicsemi.dfu.init_packet_pb import *
+from dfu.init_packet_pb import *
 from google.protobuf.message import EncodeError
-import nordicsemi.dfu.dfu_cc_pb2 as pb
+import dfu.dfu_cc_pb2 as pb
 
 HASH_BYTES_A = b'123123123123'
 HASH_BYTES_B = b'434343434343'

@@ -55,13 +55,13 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='dfu-cc.proto',
   package='dfu',
-  serialized_pb=_b('\n\x0c\x64\x66u-cc.proto\x12\x03\x64\x66u\"6\n\x04Hash\x12 \n\thash_type\x18\x01 \x02(\x0e\x32\r.dfu.HashType\x12\x0c\n\x04hash\x18\x02 \x02(\x0c\"\xca\x01\n\x0bInitCommand\x12\x12\n\nfw_version\x18\x01 \x01(\r\x12\x12\n\nhw_version\x18\x02 \x01(\r\x12\x12\n\x06sd_req\x18\x03 \x03(\rB\x02\x10\x01\x12\x19\n\x04type\x18\x04 \x01(\x0e\x32\x0b.dfu.FwType\x12\x0f\n\x07sd_size\x18\x05 \x01(\r\x12\x0f\n\x07\x62l_size\x18\x06 \x01(\r\x12\x10\n\x08\x61pp_size\x18\x07 \x01(\r\x12\x17\n\x04hash\x18\x08 \x01(\x0b\x32\t.dfu.Hash\x12\x17\n\x08is_debug\x18\t \x01(\x08:\x05\x66\x61lse\"\x1f\n\x0cResetCommand\x12\x0f\n\x07timeout\x18\x01 \x02(\r\"i\n\x07\x43ommand\x12\x1c\n\x07op_code\x18\x01 \x01(\x0e\x32\x0b.dfu.OpCode\x12\x1e\n\x04init\x18\x02 \x01(\x0b\x32\x10.dfu.InitCommand\x12 \n\x05reset\x18\x03 \x01(\x0b\x32\x11.dfu.ResetCommand\"m\n\rSignedCommand\x12\x1d\n\x07\x63ommand\x18\x01 \x02(\x0b\x32\x0c.dfu.Command\x12*\n\x0esignature_type\x18\x02 \x02(\x0e\x32\x12.dfu.SignatureType\x12\x11\n\tsignature\x18\x03 \x02(\x0c\"S\n\x06Packet\x12\x1d\n\x07\x63ommand\x18\x01 \x01(\x0b\x32\x0c.dfu.Command\x12*\n\x0esigned_command\x18\x02 \x01(\x0b\x32\x12.dfu.SignedCommand*\x1d\n\x06OpCode\x12\t\n\x05RESET\x10\x00\x12\x08\n\x04INIT\x10\x01*T\n\x06\x46wType\x12\x0f\n\x0b\x41PPLICATION\x10\x00\x12\x0e\n\nSOFTDEVICE\x10\x01\x12\x0e\n\nBOOTLOADER\x10\x02\x12\x19\n\x15SOFTDEVICE_BOOTLOADER\x10\x03*D\n\x08HashType\x12\x0b\n\x07NO_HASH\x10\x00\x12\x07\n\x03\x43RC\x10\x01\x12\n\n\x06SHA128\x10\x02\x12\n\n\x06SHA256\x10\x03\x12\n\n\x06SHA512\x10\x04*3\n\rSignatureType\x12\x15\n\x11\x45\x43\x44SA_P256_SHA256\x10\x00\x12\x0b\n\x07\x45\x44\x32\x35\x35\x31\x39\x10\x01')
+  serialized_pb=_b('\n\x0c\x64\x66u-cc.proto\x12\x03\x64\x66u\"6\n\x04Hash\x12 \n\thash_type\x18\x01 \x02(\x0e\x32\r.HashType\x12\x0c\n\x04hash\x18\x02 \x02(\x0c\"\xca\x01\n\x0bInitCommand\x12\x12\n\nfw_version\x18\x01 \x01(\r\x12\x12\n\nhw_version\x18\x02 \x01(\r\x12\x12\n\x06sd_req\x18\x03 \x03(\rB\x02\x10\x01\x12\x19\n\x04type\x18\x04 \x01(\x0e\x32\x0b.FwType\x12\x0f\n\x07sd_size\x18\x05 \x01(\r\x12\x0f\n\x07\x62l_size\x18\x06 \x01(\r\x12\x10\n\x08\x61pp_size\x18\x07 \x01(\r\x12\x17\n\x04hash\x18\x08 \x01(\x0b\x32\t.Hash\x12\x17\n\x08is_debug\x18\t \x01(\x08:\x05\x66\x61lse\"\x1f\n\x0cResetCommand\x12\x0f\n\x07timeout\x18\x01 \x02(\r\"i\n\x07\x43ommand\x12\x1c\n\x07op_code\x18\x01 \x01(\x0e\x32\x0b.OpCode\x12\x1e\n\x04init\x18\x02 \x01(\x0b\x32\x10.InitCommand\x12 \n\x05reset\x18\x03 \x01(\x0b\x32\x11.ResetCommand\"m\n\rSignedCommand\x12\x1d\n\x07\x63ommand\x18\x01 \x02(\x0b\x32\x0c.Command\x12*\n\x0esignature_type\x18\x02 \x02(\x0e\x32\x12.SignatureType\x12\x11\n\tsignature\x18\x03 \x02(\x0c\"S\n\x06Packet\x12\x1d\n\x07\x63ommand\x18\x01 \x01(\x0b\x32\x0c.Command\x12*\n\x0esigned_command\x18\x02 \x01(\x0b\x32\x12.SignedCommand*\x1d\n\x06OpCode\x12\t\n\x05RESET\x10\x00\x12\x08\n\x04INIT\x10\x01*T\n\x06\x46wType\x12\x0f\n\x0b\x41PPLICATION\x10\x00\x12\x0e\n\nSOFTDEVICE\x10\x01\x12\x0e\n\nBOOTLOADER\x10\x02\x12\x19\n\x15SOFTDEVICE_BOOTLOADER\x10\x03*D\n\x08HashType\x12\x0b\n\x07NO_HASH\x10\x00\x12\x07\n\x03\x43RC\x10\x01\x12\n\n\x06SHA128\x10\x02\x12\n\n\x06SHA256\x10\x03\x12\n\n\x06SHA512\x10\x04*3\n\rSignatureType\x12\x15\n\x11\x45\x43\x44SA_P256_SHA256\x10\x00\x12\x0b\n\x07\x45\x44\x32\x35\x35\x31\x39\x10\x01')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _OPCODE = _descriptor.EnumDescriptor(
   name='OpCode',
-  full_name='dfu.OpCode',
+  full_name='OpCode',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -84,7 +84,7 @@ _sym_db.RegisterEnumDescriptor(_OPCODE)
 OpCode = enum_type_wrapper.EnumTypeWrapper(_OPCODE)
 _FWTYPE = _descriptor.EnumDescriptor(
   name='FwType',
-  full_name='dfu.FwType',
+  full_name='FwType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -115,7 +115,7 @@ _sym_db.RegisterEnumDescriptor(_FWTYPE)
 FwType = enum_type_wrapper.EnumTypeWrapper(_FWTYPE)
 _HASHTYPE = _descriptor.EnumDescriptor(
   name='HashType',
-  full_name='dfu.HashType',
+  full_name='HashType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -150,7 +150,7 @@ _sym_db.RegisterEnumDescriptor(_HASHTYPE)
 HashType = enum_type_wrapper.EnumTypeWrapper(_HASHTYPE)
 _SIGNATURETYPE = _descriptor.EnumDescriptor(
   name='SignatureType',
-  full_name='dfu.SignatureType',
+  full_name='SignatureType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -189,20 +189,20 @@ ED25519 = 1
 
 _HASH = _descriptor.Descriptor(
   name='Hash',
-  full_name='dfu.Hash',
+  full_name='Hash',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='hash_type', full_name='dfu.Hash.hash_type', index=0,
+      name='hash_type', full_name='Hash.hash_type', index=0,
       number=1, type=14, cpp_type=8, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='hash', full_name='dfu.Hash.hash', index=1,
+      name='hash', full_name='Hash.hash', index=1,
       number=2, type=12, cpp_type=9, label=2,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -226,69 +226,69 @@ _HASH = _descriptor.Descriptor(
 
 _INITCOMMAND = _descriptor.Descriptor(
   name='InitCommand',
-  full_name='dfu.InitCommand',
+  full_name='InitCommand',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='fw_version', full_name='dfu.InitCommand.fw_version', index=0,
+      name='fw_version', full_name='InitCommand.fw_version', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='hw_version', full_name='dfu.InitCommand.hw_version', index=1,
+      name='hw_version', full_name='InitCommand.hw_version', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sd_req', full_name='dfu.InitCommand.sd_req', index=2,
+      name='sd_req', full_name='InitCommand.sd_req', index=2,
       number=3, type=13, cpp_type=3, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\020\001'))),
     _descriptor.FieldDescriptor(
-      name='type', full_name='dfu.InitCommand.type', index=3,
+      name='type', full_name='InitCommand.type', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sd_size', full_name='dfu.InitCommand.sd_size', index=4,
+      name='sd_size', full_name='InitCommand.sd_size', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='bl_size', full_name='dfu.InitCommand.bl_size', index=5,
+      name='bl_size', full_name='InitCommand.bl_size', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='app_size', full_name='dfu.InitCommand.app_size', index=6,
+      name='app_size', full_name='InitCommand.app_size', index=6,
       number=7, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='hash', full_name='dfu.InitCommand.hash', index=7,
+      name='hash', full_name='InitCommand.hash', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='is_debug', full_name='dfu.InitCommand.is_debug', index=8,
+      name='is_debug', full_name='InitCommand.is_debug', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -312,13 +312,13 @@ _INITCOMMAND = _descriptor.Descriptor(
 
 _RESETCOMMAND = _descriptor.Descriptor(
   name='ResetCommand',
-  full_name='dfu.ResetCommand',
+  full_name='ResetCommand',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='timeout', full_name='dfu.ResetCommand.timeout', index=0,
+      name='timeout', full_name='ResetCommand.timeout', index=0,
       number=1, type=13, cpp_type=3, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -342,27 +342,27 @@ _RESETCOMMAND = _descriptor.Descriptor(
 
 _COMMAND = _descriptor.Descriptor(
   name='Command',
-  full_name='dfu.Command',
+  full_name='Command',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='op_code', full_name='dfu.Command.op_code', index=0,
+      name='op_code', full_name='Command.op_code', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='init', full_name='dfu.Command.init', index=1,
+      name='init', full_name='Command.init', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='reset', full_name='dfu.Command.reset', index=2,
+      name='reset', full_name='Command.reset', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -386,27 +386,27 @@ _COMMAND = _descriptor.Descriptor(
 
 _SIGNEDCOMMAND = _descriptor.Descriptor(
   name='SignedCommand',
-  full_name='dfu.SignedCommand',
+  full_name='SignedCommand',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='command', full_name='dfu.SignedCommand.command', index=0,
+      name='command', full_name='SignedCommand.command', index=0,
       number=1, type=11, cpp_type=10, label=2,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='signature_type', full_name='dfu.SignedCommand.signature_type', index=1,
+      name='signature_type', full_name='SignedCommand.signature_type', index=1,
       number=2, type=14, cpp_type=8, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='signature', full_name='dfu.SignedCommand.signature', index=2,
+      name='signature', full_name='SignedCommand.signature', index=2,
       number=3, type=12, cpp_type=9, label=2,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -430,20 +430,20 @@ _SIGNEDCOMMAND = _descriptor.Descriptor(
 
 _PACKET = _descriptor.Descriptor(
   name='Packet',
-  full_name='dfu.Packet',
+  full_name='Packet',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='command', full_name='dfu.Packet.command', index=0,
+      name='command', full_name='Packet.command', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='signed_command', full_name='dfu.Packet.signed_command', index=1,
+      name='signed_command', full_name='Packet.signed_command', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -488,42 +488,42 @@ DESCRIPTOR.enum_types_by_name['SignatureType'] = _SIGNATURETYPE
 Hash = _reflection.GeneratedProtocolMessageType('Hash', (_message.Message,), dict(
   DESCRIPTOR = _HASH,
   __module__ = 'dfu_cc_pb2'
-  # @@protoc_insertion_point(class_scope:dfu.Hash)
+  # @@protoc_insertion_point(class_scope:Hash)
   ))
 _sym_db.RegisterMessage(Hash)
 
 InitCommand = _reflection.GeneratedProtocolMessageType('InitCommand', (_message.Message,), dict(
   DESCRIPTOR = _INITCOMMAND,
   __module__ = 'dfu_cc_pb2'
-  # @@protoc_insertion_point(class_scope:dfu.InitCommand)
+  # @@protoc_insertion_point(class_scope:InitCommand)
   ))
 _sym_db.RegisterMessage(InitCommand)
 
 ResetCommand = _reflection.GeneratedProtocolMessageType('ResetCommand', (_message.Message,), dict(
   DESCRIPTOR = _RESETCOMMAND,
   __module__ = 'dfu_cc_pb2'
-  # @@protoc_insertion_point(class_scope:dfu.ResetCommand)
+  # @@protoc_insertion_point(class_scope:ResetCommand)
   ))
 _sym_db.RegisterMessage(ResetCommand)
 
 Command = _reflection.GeneratedProtocolMessageType('Command', (_message.Message,), dict(
   DESCRIPTOR = _COMMAND,
   __module__ = 'dfu_cc_pb2'
-  # @@protoc_insertion_point(class_scope:dfu.Command)
+  # @@protoc_insertion_point(class_scope:Command)
   ))
 _sym_db.RegisterMessage(Command)
 
 SignedCommand = _reflection.GeneratedProtocolMessageType('SignedCommand', (_message.Message,), dict(
   DESCRIPTOR = _SIGNEDCOMMAND,
   __module__ = 'dfu_cc_pb2'
-  # @@protoc_insertion_point(class_scope:dfu.SignedCommand)
+  # @@protoc_insertion_point(class_scope:SignedCommand)
   ))
 _sym_db.RegisterMessage(SignedCommand)
 
 Packet = _reflection.GeneratedProtocolMessageType('Packet', (_message.Message,), dict(
   DESCRIPTOR = _PACKET,
   __module__ = 'dfu_cc_pb2'
-  # @@protoc_insertion_point(class_scope:dfu.Packet)
+  # @@protoc_insertion_point(class_scope:Packet)
   ))
 _sym_db.RegisterMessage(Packet)
 

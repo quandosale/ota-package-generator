@@ -42,7 +42,7 @@ import os
 
 # Nordic libraries
 from pc_ble_driver_py.exceptions import NotImplementedException
-from nordicsemi.dfu.model import HexType, FirmwareKeys
+from model import HexType, FirmwareKeys
 
 
 class ManifestGenerator(object):

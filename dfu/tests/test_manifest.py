@@ -39,9 +39,9 @@ import copy
 import json
 import unittest
 
-from nordicsemi.dfu.manifest import ManifestGenerator, Manifest
-from nordicsemi.dfu.model import HexType
-from nordicsemi.dfu.package import FirmwareKeys
+from dfu.manifest import ManifestGenerator, Manifest
+from dfu.model import HexType
+from dfu.package import FirmwareKeys
 
 
 class TestManifest(unittest.TestCase):

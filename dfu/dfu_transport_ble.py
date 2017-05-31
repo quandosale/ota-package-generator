@@ -43,7 +43,7 @@ import struct
 import logging
 import binascii
 
-from nordicsemi.dfu.dfu_transport   import DfuTransport, DfuEvent
+from dfu_transport   import DfuTransport, DfuEvent
 from pc_ble_driver_py.exceptions    import NordicSemiException, IllegalStateException
 from pc_ble_driver_py.ble_driver    import BLEDriver, BLEDriverObserver, BLEEnableParams, BLEUUIDBase, BLEUUID, BLEAdvData, BLEGapConnParams, NordicSemiException
 from pc_ble_driver_py.ble_driver    import ATT_MTU_DEFAULT

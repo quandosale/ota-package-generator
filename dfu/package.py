@@ -49,11 +49,11 @@ import hashlib
 
 # Nordic libraries
 from pc_ble_driver_py.exceptions import NordicSemiException
-from nordicsemi.dfu.nrfhex import *
-from nordicsemi.dfu.init_packet_pb import *
-from nordicsemi.dfu.manifest import ManifestGenerator, Manifest
-from nordicsemi.dfu.model import HexType, FirmwareKeys
-from nordicsemi.dfu.crc16 import *
+from nrfhex import *
+from init_packet_pb import *
+from manifest import ManifestGenerator, Manifest
+from model import HexType, FirmwareKeys
+from crc16 import *
 
 from signing import Signing
 

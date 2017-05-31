@@ -42,7 +42,7 @@ import unittest
 from zipfile import ZipFile
 import shutil
 
-from nordicsemi.dfu.package import Package
+from dfu.package import Package
 
 
 class TestPackage(unittest.TestCase):

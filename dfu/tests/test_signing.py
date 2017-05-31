@@ -41,7 +41,7 @@ import shutil
 import tempfile
 import unittest
 
-from nordicsemi.dfu.signing import Signing
+from dfu.signing import Signing
 
 
 class TestSinging(unittest.TestCase):

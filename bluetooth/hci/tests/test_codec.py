@@ -37,8 +37,8 @@
 
 import json
 import unittest
-from nordicsemi.bluetooth.hci.slip import Slip
-from nordicsemi.bluetooth.hci import codec
+from bluetooth.hci.slip import Slip
+from bluetooth.hci import codec
 
 
 class TestInitPacket(unittest.TestCase):

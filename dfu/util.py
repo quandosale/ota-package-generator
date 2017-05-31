@@ -105,7 +105,7 @@ def slip_parts_to_four_bytes(seq, dip, rp, pkt_type, pkt_len):
     Creates a SLIP header.
 
     For a description of the SLIP header go to:
-    http://developer.nordicsemi.com/nRF51_SDK/doc/7.2.0/s110/html/a00093.html
+    http://developer.com/nRF51_SDK/doc/7.2.0/s110/html/a00093.html
 
     :param int seq: Packet sequence number
     :param int dip: Data integrity check

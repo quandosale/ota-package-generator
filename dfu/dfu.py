@@ -44,9 +44,9 @@ import tempfile
 
 
 # Nordic libraries
-from nordicsemi.dfu.package         import Package
-from nordicsemi.dfu.dfu_transport   import DfuEvent
-from nordicsemi.dfu.manifest        import SoftdeviceBootloaderFirmware
+from package         import Package
+from dfu_transport   import DfuEvent
+from manifest        import SoftdeviceBootloaderFirmware
 
 logger = logging.getLogger(__name__)
 
@@ -61,7 +61,7 @@ class Dfu(object):
         @param zip_file_path: Path to the zip file with the firmware to upgrade
         @type zip_file_path: str
         @param dfu_transport: Transport backend to use to upgrade
-        @type dfu_transport: nordicsemi.dfu.dfu_transport.DfuTransport
+        @type dfu_transport: dfu_transport.DfuTransport
         @return
         """
         self.temp_dir           = tempfile.mkdtemp(prefix="nrf_dfu_")

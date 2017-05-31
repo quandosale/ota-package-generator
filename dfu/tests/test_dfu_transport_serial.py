@@ -41,11 +41,11 @@ import unittest
 
 # Nordic Semiconductor imports
 import sys
-from nordicsemi.dfu.dfu_transport import DfuEvent
-from nordicsemi.dfu import crc16
-from nordicsemi.dfu.package import PacketField
-from nordicsemi.dfu.model import HexType
-from nordicsemi.dfu.dfu_transport_serial import DfuTransportSerial
+from dfu.dfu_transport import DfuEvent
+import crc16
+from dfu.package import PacketField
+from dfu.model import HexType
+from dfu.dfu_transport_serial import DfuTransportSerial
 
 
 def setup_logging():

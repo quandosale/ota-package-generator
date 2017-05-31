@@ -46,7 +46,7 @@ import struct
 from serial import Serial
 
 # Nordic Semiconductor imports
-from nordicsemi.dfu.dfu_transport   import DfuTransport, DfuEvent
+from dfu_transport   import DfuTransport, DfuEvent
 from pc_ble_driver_py.exceptions    import NordicSemiException, IllegalStateException
 
 class ValidationException(NordicSemiException):
