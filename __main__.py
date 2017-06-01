@@ -266,13 +266,15 @@ def keys():
 def generate(key_file):
     signer = Signing()
     
-    if os.path.exists(key_file):
-        if not query_func("File found at %s. Do you want to overwrite the file?" % key_file):
-            click.echo('Key generation aborted.')
-            return
+#    if os.path.exists(key_file):
+#        if not query_func("File found at %s. Do you want to overwrite the file?" % key_file):
+#             click.echo('Key generation aborted.')
+#             os._exit(1)
+#             return
 
     signer.gen_key(key_file)
     click.echo("Generated private key and stored it in: %s" % key_file)
+    os._exit(0)
 
 @keys.command(short_help='Display the private key that is stored in a file in PEM format or a public key derived from it.')
 @click.argument('key_file', required=True, type=click.Path())
@@ -531,6 +533,7 @@ def generate(zipfile,
 
     log_message = "Zip created at {0}".format(zipfile_path)
     click.echo(log_message)
+    os._exit(0)
 
 @pkg.command(short_help='Display the contents of a .zip package file.')
 @click.argument('zip_file', required=True, type=click.Path())
